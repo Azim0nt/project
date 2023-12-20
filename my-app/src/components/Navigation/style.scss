@@ -1,0 +1,57 @@
+@import '../../assets/styles/settings';
+.nav-body{
+    background-color: $bag;
+    width: 100%;
+    height: 80px;
+    .nav{
+        width: 70%;
+        height: inherit;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .middle{
+            ul{
+                list-style-type: none;
+                li{
+                    display: inline-block;
+                    padding: 10px;
+                    .active{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+        .right{
+            #regist{
+                color: $green;
+                border: 2px solid $green;
+                border-radius: 15px;
+                margin-right: 5px;
+                &:hover{
+                    background-color: $green;
+                    color: $bag;
+                    font-weight: bold;
+                }}
+            #login{
+                color: $blue;
+                border: 2px solid $blue;
+                border-radius: 15px;
+                &:hover{
+                    background-color: $blue;
+                    color: $bag;
+                    font-weight: bold;
+                }
+            }
+            button{
+                background-color: $transparent;
+                padding: 10px 20px;
+                outline: none;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $light;
+        }
+    }
+}
