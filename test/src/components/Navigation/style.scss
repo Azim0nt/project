@@ -1,0 +1,33 @@
+@import '../../assets/styles/settings';
+.nav-body{
+    background-color: $bag;
+    width: 100%;
+    height: 80px;
+    .nav{
+        width: 70%;
+        height: inherit;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .middle, .right{
+            ul{
+                list-style-type: none;
+                
+                li{
+                    display: inline-block;
+                    color: $light;
+                    padding: 10px;
+                    .active{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    
+        a{
+            text-decoration: none;
+            color: $light;
+        }
+    }
+}

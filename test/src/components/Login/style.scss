@@ -1,0 +1,13 @@
+@import '../../assets/styles/settings';
+.Login-body{
+    width: 100%;
+    height: 100vh;
+    background-color: $bag-l;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        @extend %h1;
+        color: $blue;
+    }
+}
