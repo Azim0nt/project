@@ -19,7 +19,8 @@
                     color: $light;
                     padding: 10px;
                     .active{
-                        color: $yellow;
+                        color: $yellow; 
+                        text-decoration: underline;
                     }
                 }
             }
