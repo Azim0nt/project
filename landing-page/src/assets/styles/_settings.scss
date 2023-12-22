@@ -1,0 +1,36 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+// colors
+$black:#222;
+$green:#2AD200;
+$yellow:#FFD25A;
+$white:#fff;
+$button-green: linear-gradient(0deg, #45C436, #45C436);
+
+// settings
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-family: 'SF Pro Display', sans-serif;    
+    color: $black;  
+}
+//presents
+%btn{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background: $button-green;
+    color: $white;
+    font-weight: 400;
+    font-size: 14px;  
+    &:hover{
+        background-color: $white;
+        color: $green;
+        border: 2px solid $green;
+        transform: scale(1.1);
+    }  
+    &:active{
+        transform: scale(1);
+    }                                       
+}
