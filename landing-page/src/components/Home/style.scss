@@ -1,1 +1,69 @@
 @import '../../assets/styles/settings';
+.home-body{
+    width: 100%;
+    height: 100vh;
+    background:url('../../assets/images/luca-bravo-198061-unsplash\ 1\ \(1\).png')  no-repeat;
+    background-position: center;
+    background-size: cover;
+    .home{
+        width: 80%;
+        height: inherit;
+        margin: 0 auto;
+        div{
+            .left{
+                padding-top: 130px;
+                span{
+                    #first, #last{
+                        font-size: 56px;
+                        font-weight: 600;
+                    }
+                    #first{
+                        color: $green;
+                    }
+                }
+                #p-1{
+                    font-weight: 400;
+                    font-size: 34px;
+                    margin-top: 10px;
+                }
+                .span-1{
+                    margin-top: 50px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+                    font-size: 18px;
+                    #mark{
+                        color: $green;
+                    }
+                }
+                #btn{
+                    margin-top: 70px;
+                    @extend %btn;
+                    padding: 15px 60px;
+                    text-align: left;
+                    
+                }
+                #book{
+                    position: absolute;
+                    left: 310px;
+                    z-index: 9;
+                }
+                #laptop{
+                    position: absolute;
+                    right: 610px;
+                    bottom: 150px;
+                }
+                #phone{
+                    position: absolute;
+                    left: 740px;
+                }
+                #money{
+                    position: absolute;
+                    right: 710px; 
+                    bottom: 150px;
+
+                }
+            }
+        }
+    }
+}

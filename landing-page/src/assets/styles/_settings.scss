@@ -24,17 +24,13 @@ a{
     padding: 10px 20px;
     outline: none;
     border: none;
-    background: $button-green;
+    background : $button-green;
     color: $white;
     font-weight: 400;
     font-size: 14px;  
-    &:hover{
-        background-color: $white;
-        color: $green;
-        border: 2px solid $green;
-        transform: scale(1.1);
-    }  
+    border-radius: 50px;
+    
     &:active{
-        transform: scale(1);
+        transform: scale(1.1);
     }                                       
 }
