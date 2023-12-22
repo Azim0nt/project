@@ -9,7 +9,35 @@
         width: 80%;
         height: inherit;
         margin: 0 auto;
-        div{
+        display: flex;
+            .right{
+                margin-top: 50px;
+                margin-right: 50px;
+                .info{
+                    .first{
+                        display: grid;
+                        grid-template-columns: 30px;
+                        justify-content: center;
+                        align-items: center;
+                        width: 25px;
+                        svg{
+                            width: 13px;
+                            height: 25px;
+                        }
+                        .line{
+                            margin-left: 6px;
+                            padding: 1px;
+                            width: 2px;
+                            height: 150px;
+                            background-color: $white;
+                            div{
+                                width: 2px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
             .left{
                 padding-top: 130px;
                 span{
@@ -43,27 +71,7 @@
                     text-align: left;
                     
                 }
-                #book{
-                    position: absolute;
-                    left: 310px;
-                    z-index: 9;
-                }
-                #laptop{
-                    position: absolute;
-                    right: 610px;
-                    bottom: 150px;
-                }
-                #phone{
-                    position: absolute;
-                    left: 740px;
-                }
-                #money{
-                    position: absolute;
-                    right: 710px; 
-                    bottom: 150px;
-
-                }
+                
             }
         }
     }
-}
