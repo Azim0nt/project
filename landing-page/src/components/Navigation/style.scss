@@ -1,0 +1,133 @@
+@import '../../assets/styles/settings';
+
+.nav-body {
+    width: 100%;
+    border-bottom: 1px solid #DADADA;
+
+    nav {
+        width: 80%;
+        margin: 0 auto;
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+
+            .left {
+
+                .active {
+                    p{
+                        color: $green;
+                        text-decoration: underline;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            div {
+
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 5px;
+
+                    &:hover {
+                        color: $green;
+
+                    }
+                }
+            }
+        }
+
+        .top {
+            border-bottom: 1px solid #DADADA;
+
+            height: 100px;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                * {
+                    display: inline-block;
+                    margin: 5px;
+                    text-align: center;
+
+                }
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                div {
+
+                    button {
+                        background-color: $transporent;
+                        border: none;
+                        outline: none;
+                        display: flex;
+                        align-items: center;
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+            .middle {
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        font-weight: 400;
+                        font-size: 36px;
+                    }
+                }
+            }
+
+            .right {
+                span {
+                    text-align: center;
+
+                    #number {
+                        font-size: 18px;
+                        font-weight: 400;
+                        margin-bottom: 5px;
+                    }
+
+                    #status {
+
+                        padding: 5px 10px;
+                        border-radius: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                        font-size: 14px;
+                        background-color: $green;
+                        color: $black;
+
+                        h2 {
+                            color: $white;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

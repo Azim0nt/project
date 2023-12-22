@@ -5,6 +5,7 @@ $green:#2AD200;
 $yellow:#FFD25A;
 $white:#fff;
 $button-green: linear-gradient(0deg, #45C436, #45C436);
+$transporent:#00000000;
 
 // settings
 *{
@@ -14,6 +15,9 @@ $button-green: linear-gradient(0deg, #45C436, #45C436);
     transition: 0.5s;
     font-family: 'SF Pro Display', sans-serif;    
     color: $black;  
+}
+a{
+    text-decoration: none;
 }
 //presents
 %btn{
