@@ -2,6 +2,7 @@ import {Routes, Route, useLocation} from 'react-router-dom';
 import  Navigation from './Navigation';
 import FullPage from './FullPage';
 import Home from './Home';
+import Catalog from './Catalog';
 function AllComponents(props) {
     const location = useLocation()
     return ( 
@@ -10,6 +11,7 @@ function AllComponents(props) {
                 <Route path='/' element={<Navigation />}>
                     <Route index element={<FullPage/>}/>
                     <Route path='/home' element={<Home/>}/>
+                    <Route path='/catalog' element={<Catalog/>}/>
                 </Route>
             </Routes>
         </div>
