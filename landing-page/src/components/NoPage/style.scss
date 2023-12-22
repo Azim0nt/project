@@ -1,0 +1,21 @@
+@import '../../assets/styles/settings';
+
+.no-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    h1 {
+        color: $red;
+
+        p{
+            display: inline-block;
+            padding: 20px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid $red;
+        }
+    }
+}
