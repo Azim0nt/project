@@ -4,6 +4,8 @@ import Catalog from '../Catalog';
 import Price from '../Price';
 import Portfolio from '../Portfolio';
 import About_me from '../About-me';
+import Order from '../Order';
+import Footer from '../Footer';
 function FullPage() {
     return ( 
         <>
@@ -12,6 +14,8 @@ function FullPage() {
         <Price/>
         <Portfolio/>
         <About_me />
+        <Order />
+        <Footer/>
         </>
      );
 }

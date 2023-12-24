@@ -1,0 +1,177 @@
+@import '../../assets/styles/settings';
+
+.order-body {
+    width: 100%;
+    height: 30vh;
+    margin-top: 150px;
+    background: $green;
+    position: relative;
+
+    .order {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        height: inherit;
+
+        #title {
+            padding-top: 20px;
+
+            font-weight: 600;
+            font-size: 46px;
+            color: $white;
+        }
+
+        .cards {
+            grid-template-columns: repeat(2, 30%);
+            display: grid;
+
+            div {
+                display: flex;
+                margin-top: 20px;
+
+                P {
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: $white;
+
+                }
+
+                #left {
+                    width: 37px;
+                    height: 37px;
+                    border: 2px solid $yellow;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        #orange {
+            position: absolute;
+            right: 250px;
+            top: 0;
+            height: inherit;
+            z-index: 9;
+        }
+
+        #orangeHead {
+            position: absolute;
+            top: -87px;
+            right: 261px;
+            z-index: 10;
+        }
+    }
+
+    .order-main {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url('../../assets/images/bag-2.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        #title-m {
+            font-weight: 600;
+            font-size: 56px;
+            width: 100%;
+            text-align: center;
+
+            p {
+                color: $green;
+                display: inline-block;
+            }
+        }
+
+        #dot {
+            font-size: 250px;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            color: $green;
+            text-shadow: 0 0 50px;
+            border: 5px solid $white;
+            z-index: 5;
+            left: 90px;
+            top: 80px;
+        }
+
+        .form {
+            z-index: 9;
+            position: absolute;
+            left: 150px;
+            top: 250px;
+            width: 440px;
+            height: 530px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px #0000001C;
+            padding: 30px;
+            background-color: $white;
+
+            #title {
+                font-weight: 600;
+                font-size: 34px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #subtitle {
+                font-weight: 400;
+                font-size: 18px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            div {
+                width: 100%;
+                height: 70px;
+                background-color: #F2F2F2;
+                margin-bottom: 20px;
+                border-radius: 61px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 20px;
+                    margin-left: 20px;
+                }
+
+                input {
+                    background-color: $transporent;
+                    outline: none;
+                    border: none;
+                    height: inherit;
+                    &::placeholder {
+                        color: #C5C5C5;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                }
+
+            }
+            #btn{
+                @extend %btn;
+                width: 100%;
+                height: 60px;
+            }
+            #footer-p{
+                font-weight: 400;
+                font-size: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+        }
+        #catalog{
+            position: absolute;
+            left: 350px;
+            top: 250px;
+        }
+    }
+}

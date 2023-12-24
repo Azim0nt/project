@@ -7,6 +7,7 @@ import Price from './Price';
 import NoPage from './NoPage';
 import Portfolio from './Portfolio';
 import About_me from './About-me';
+import Order from './Order';
 function AllComponents(props) {
     const location = useLocation()
     return ( 
@@ -19,6 +20,8 @@ function AllComponents(props) {
                     <Route path='/price' element={<Price/>}/>
                     <Route path='/portfolio' element={<Portfolio />}/>
                     <Route path='/about-me' element={<About_me />}/>
+                    <Route path='/order' element={<Order />}/>
+
                     <Route path='*' element={<NoPage/>}/>
                 </Route>
             </Routes>
