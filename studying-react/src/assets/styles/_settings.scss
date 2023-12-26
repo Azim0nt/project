@@ -1,0 +1,15 @@
+@import url('https://fonts.cdnfonts.com/css/onest');
+$black: #333;
+$white: #e3eef0;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Onest', sans-serif;
+    background-color: $black;
+    color: $white;
+}
